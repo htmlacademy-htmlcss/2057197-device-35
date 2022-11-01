@@ -71,7 +71,7 @@ height: 40px;
 left: 0;
 top: 0;
   padding: 10px;
-  margin: 88px 723px 1954px 557px;
+  margin: 88px 523px 1954px 557px;
   }
 
   .navigation-item .button:hover{
@@ -171,6 +171,8 @@ height: 135px;
 }
 
 .button-discover {
+  position: relative;
+  z-index: 1;
   font-family: raleway, sans-serif;
 font-style: normal;
 font-weight: 800;
@@ -179,24 +181,44 @@ line-height: 21px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
-background: #FFE17F;
 width: 160px;
-height: 8px;
+height: 40px;
 border: none;
 text-decoration: none;
 }
-.button-discover:hover{
-  width: 160px;
-  height: 40px;
-  }
+
+.button-discover::before {
+  transition: .3s;
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFC700;
+  height: 8px;
+  width: 100%;
+}
+
+.button-discover__text {
+  position: relative;
+  z-index: 2;
+}
+
+.button-discover:hover::before {
+  height: 100%;
+
+}
 
   .services .button-discover:focus{
   color: #FFE17F;
   background-color: #000000;
   width: 280px;
-  height: 40px;
   }
-
+  .services .button-discover:focus::before{
+    display: none;
+  }
 
 
 
@@ -214,108 +236,47 @@ text-decoration: none;
 }
 
 
-
-.virtual-reality {
+.oll-products {
+width: 160px;
+height: 253px;
+text-decoration: none;
+}
+.products {
   Width: 160px;
   Height: 160px;
   background-color: #ffe17f;
-  background-image: url("../images/Vector\ \(virtual-reality\).svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: flex;
   align-items: center;
   text-align: bottom;
 }
+.products-images {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products-text {
+font-family: raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.02em;
+color: #000000;
+}
 
-.virtual-reality:hover {
+.products:hover {
   background-color: #FFC700;
 }
 
-.monopods-for-selfies {
-  Width: 160px;
-  Height: 160px;
-  background-color: #ffe17f;
-  background-image: url("../images/Vector\ \(mopods-for-selfies\).svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-  text-align: bottom;
-}
 
-.monopods-for-selfies:hover {
-  background-color: #FFC700;
-}
-
-.action-camera {
-  Width: 160px;
-  Height: 160px;
-  background-color: #ffe17f;
-  background-image: url("../images/Vector\ \(action-cameras\).svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-  text-align: bottom;
-}
-
-.action-camera:hover {
-  background-color: #FFC700;
-}
-
-.fitness-braselet {
-  Width: 160px;
-  Height: 160px;
-  background-color: #ffe17f;
-  background-image: url("../images/Vector\ \(fitness-braselets\).svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-  text-align: bottom;
-}
-
-.fitness-braselet:hover {
-  background-color: #FFC700;
-}
-
-.smart-watches {
-  Width: 160px;
-  Height: 160px;
-  background-color: #ffe17f;
-  background-image: url("../images/Vector\ \(smart-watches\).svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-  text-align: bottom;
-}
-
-.smart-watches:hover {
-  background-color: #FFC700;
-}
-
-.quadrocopter {
-  Width: 160px;
-  Height: 160px;
-  background-color: #ffe17f;
-  background-image: url("../images/Vector\ \(quadrocopters\).svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-  text-align: bottom;
-}
-
-.quadrocopter:hover {
-  background-color: #FFC700;
-}
 
 
 
 .services {
   width: 1440px;
-  background-color: #f0f0f0;
+  box-shadow: inset 0 -289px 0 #f0f0f0;
 
 }
 
@@ -330,9 +291,9 @@ list-style-type: none;
 .services-garantee {
   list-style-type: none;
   }
-  .services-credit {
-    list-style-type: none;
-    }
+.services-credit {
+  list-style-type: none;
+  }
 
 .services .broken-line {
 border: none;
@@ -343,21 +304,16 @@ Height: 319px;
 }
 
 
-
 .delivery {
 background-image: url("../images/Courier.svg");
 width: 136px;
 height: 164px;
-
 }
-
 .garantee {
 background-image: url("../images/Guarantee.svg");
 width: 171px;
 height: 195px;
-
 }
-
 .credit {
 background-image: url("../images/Credit.svg");
 width: 156px;
@@ -365,35 +321,73 @@ height: 188px;
 }
 
 
-.special-delivery a{
-  font-family: raleway, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-  letter-spacing: 0.2em;
-}
 
 
 
-.shadow a{
-display: inline-block;
-vertical-align: middle;
+.special-delivery__button {
+ position: relative;
+ display: flex;
+align-items: center;
 width: 1160px;
-height: 100px;
 background: #F0F0F0;
 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
 font-size: 20px;
-line-height: 23px;
-margin-left: 140px;
-margin-right: 140px;
-margin-bottom: 1427;
-margin-top: 1604;
+margin: 0 auto;
+text-decoration: none;
+
 }
+
+.special-delivery__car {
+  width: 125px;
+  height: 100px;
+  background: #FFE17F;
+}
+.delivery__car {
+  display: block;
+  margin: 35px 39px 34px;
+}
+.special-delivery__car:hover {
+  background: #FFC700;
+}
+
+.special-delivery__text {
+  flex: 1;
+ line-height: 100px;
+ font-family: raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #000000;
+}
+
+.special-delivery__inform {
+  position: absolute;
+  top: 50%;
+  right: 42px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(220, 220, 220, 0.5);
+  background-repeat: no-repeat;
+}
+.delivery__inform {
+  display: block;
+  margin: 14px 19.5px 14px 18.5px;
+  opacity: 0.6;
+}
+.delivery__inform:hover {
+  opacity: 1;
+}
+.special-delivery__button:active {
+  opacity: 0.3;
+}
+
+
 
 .about-us .button-services {
   font-family: raleway, sans-serif;
@@ -419,6 +413,13 @@ margin-top: 1604;
 
 
 
+.breadcrumbs-list{
+margin-left: 0;
+padding-left: 0;
+}
+.breadcrumbs-item {
+  list-style-type: none;
+}
 .breadcrumbs-link {
   text-decoration: none;
   color: #000000;
@@ -442,13 +443,13 @@ margin-top: 1604;
   }
   .range-controls .scale {
     background: #DCDCDC;
-    border: 2px solid #DCDCDC;
+    height: 2px;
   }
   .range-controls .bar {
     Width: 119px;
     Top: 10px;
     background: #000000;
-    border: 2px solid #000000;
+    height: 2px;
   }
   .range-toggle {
     position: absolute;
@@ -469,8 +470,8 @@ margin-top: 1604;
  .text {
   font-size: 14px;
   line-height: 20px;
-  color:#000000
-  opacity: 0,3;
+  color:#000000;
+  opacity: .3;
 }
 
 .product-list {
