@@ -2350,7 +2350,9 @@ address {
   padding: 0;
 }
 
-.modal-container-close {}
+.modal-container-close {
+  display: none;
+}
 
 
 
