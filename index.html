@@ -40,6 +40,63 @@
               </div>
               <div class="navigation-item">
                 <a class="navigation-user bascet" href="basket.html"><span class="count">2</span>Корзина</a>
+
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <h2 class="visually-hidden">Корзина</h2>
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <a href="#" class="popover-cart-link">
+                          <img class="cart-item__img" src="images/catalog (Avateur-selfie-stick).jpg"
+                            alt="Фото товара Любительская селфи-палка." width="39" height="43">
+                          <p class="cart-item-title">Любительская селфи-палка</p>
+                        </a>
+                        <button type="button" class="cart-item-button button">
+                          <svg class="cross" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#a)">
+                              <path fill="currentColor"
+                                d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z" />
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="currentColor" d="M0 0h11v11H0z" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <a href="#" class="popover-cart-link">
+                          <img class="cart-item__img" src="images/catalog (professional-selfie-stick).jpg"
+                            alt="Фото товара Профессиональная селфи-палка." width="39" height="43">
+                          <p class="cart-item-title">Профессиональная селфи-палка</p>
+                        </a>
+                        <button type="button" class="cart-item-button button">
+                          <svg class="cross" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#a)">
+                              <path fill="currentColor"
+                                d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z" />
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="currentColor" d="M0 0h11v11H0z" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="popover-result">
+                      <span class="popover-result-item">Товаров: 2</span>
+                      <span class="popover-result-item">Сумма: 2000 &#8381</span>
+                    </div>
+                    <button class="popover-open-button button">
+                      <span class="bascet-open">Открыть корзину</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -196,6 +253,23 @@
                   </div>
                 </li>
               </ol>
+              <ol class="slider-point-pagination">
+                <li class="slider-point-pagination-item">
+                  <button class="slider-point-pagination-button slider-point-pagination-button-current" type="button">
+                    <span class="visually-hidden">1 слайд</span>
+                  </button>
+                </li>
+                <li class="slider-point-pagination-item">
+                  <button class="slider-point-pagination-button" type="button">
+                    <span class="visually-hidden">2 слайд</span>
+                  </button>
+                </li>
+                <li class="slider-point-pagination-item">
+                  <button class="slider-point-pagination-button" type="button">
+                    <span class="visually-hidden">3 слайд</span>
+                  </button>
+                </li>
+                </ol>
             </div>
           </div>
         </section>
@@ -311,8 +385,10 @@
               <div class="special-delivery__car"> <img class="delivery__car" src="images/icon (delivery-auto).svg"
                   alt="грузовая доставка." width="47px" height="31px"> </div>
               <div class="special-delivery__text">Доставим редкий товар под заказ</div>
-              <div class="special-delivery__inform"><img class="delivery__inform" src="images/icon (i).svg"
-                  alt="информация по доставке." width="2px" height="12px"></div>
+              <div class="special-delivery__inform">
+                <button class="modal-container-close" type="button">
+                </button>
+              </div>
             </a>
           </div>
         </section>
@@ -483,6 +559,71 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title title">Доставка под заказ</h2>
+
+          <div class="modal-wrappper">
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+              <div class="name-form">
+                <span class="subtitle">Ваше имя:</span>
+                <label class="visually-hidden" for="name">Ваше имя:</label>
+                <input class="name-form-field field" type="text" id="name" name="name" placeholder="Введите имя">
+              </div>
+              </p>
+            </form>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+              <div class="name-form">
+                <span class="subtitle">Ваш e-mail:</span>
+                <label class="visually-hidden" for="e-mail">Ваш e-mail:</label>
+                <input class="mail-field field error" type="text" id="e-mail" name="e-mail" placeholder="почта">
+                <span class="error-text">Забавный у вас адрес</span>
+              </div>
+              </p>
+            </form>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+              <div class="name-form">
+                <span class="subtitle">Что нужно привезти:</span>
+                <label class="visually-hidden" for="products">Что нужно привезти:</label>
+                <input class="products-field field" type="text" id="products" name="products"
+                  placeholder="В свободной форме">
+              </div>
+              </p>
+            </form>
+            <div class="quantity-button">
+              <label class="name-form" for="quantity">Количество:</label>
+              <div class="tooltip">
+                  <a class="quantity-inform" type="button" aria-labelledby="tooltip-label-date">
+                  </a>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно.
+                  Привезём сколько получится по требованиям
+                  к провозу багажа.
+                  <span class="tooltip-arrow"></span>
+                </span>
+              </div>
+              </span>
+              <div class="quantity">
+                <div class="quantity-wrapper">
+                <button class="button button-less"></button>
+                <input class="quantity-number" type="number" id="quantity-value" name="quantity-value" value="1">
+                <button class="button button-more"></button>
+              </div>
+              </div>
+            </div>
+
+            <a class="button button-discover" href="#"><span class="button-discover__text">Отправить</a>
+          </div>
+        </section>
+      </div>
+    </div>
 
   </body>
 

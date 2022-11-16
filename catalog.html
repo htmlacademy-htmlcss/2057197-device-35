@@ -45,6 +45,63 @@
               </li>
               <li class="navigation-item">
                 <a class="navigation-user bascet" href="basket.html"><span class="count">2</span>Корзина</a>
+
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <h2 class="visually-hidden">Корзина</h2>
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <a href="#" class="popover-cart-link">
+                          <img class="cart-item__img" src="images/catalog (Avateur-selfie-stick).jpg"
+                            alt="Фото товара Любительская селфи-палка." width="39" height="43">
+                          <p class="cart-item-title">Любительская селфи-палка</p>
+                        </a>
+                        <button type="button" class="cart-item-button button">
+                          <svg class="cross" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#a)">
+                              <path fill="currentColor"
+                                d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z" />
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="currentColor" d="M0 0h11v11H0z" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <a href="#" class="popover-cart-link">
+                          <img class="cart-item__img" src="images/catalog (professional-selfie-stick).jpg"
+                            alt="Фото товара Профессиональная селфи-палка." width="39" height="43">
+                          <p class="cart-item-title">Профессиональная селфи-палка</p>
+                        </a>
+                        <button type="button" class="cart-item-button button">
+                          <svg class="cross" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#a)">
+                              <path fill="currentColor"
+                                d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z" />
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="currentColor" d="M0 0h11v11H0z" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="popover-result">
+                      <span class="popover-result-item">Товаров: 2</span>
+                      <span class="popover-result-item">Сумма: 2000 &#8381</span>
+                    </div>
+                    <button class="popover-open-button button">
+                      <span class="bascet-open">Открыть корзину</span>
+                    </button>
+                  </div>
+                </div>
             </div>
           </div>
           </div>
@@ -136,38 +193,44 @@
               </div>
               <div class="broken-line-filter">
               </div>
+
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <div class="catalog-filter-1">
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="black" checked>
-                        Черный
+                        <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-color">Черный</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="white" checked>
-                        Белый
+                        <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-color">Белый</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="blue">
-                        Синий
+                        <input class="visually-hidden control-input" type="checkbox" name="blue">
+                        <span class="control-mark"></span>
+                        <span class="control-color">Синий</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="red">
-                        Красный
+                        <input class="visually-hidden control-input" type="checkbox" name="red">
+                        <span class="control-mark"></span>
+                        <span class="control-color">Красный</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pink">
-                        Розовый
+                        <input class="visually-hidden control-input" type="checkbox" name="pink">
+                        <span class="control-mark"></span>
+                        <span class="control-color"> Розовый</span>
                       </label>
                     </li>
                   </ul>
@@ -181,14 +244,17 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="yes" checked>
-                        Есть
+                        <input class="visually-hidden control-input" type="radio" name="product-group" value="yes"
+                          checked>
+                        <span class="control-mark-2"></span>
+                        <span class="control-label">Есть</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="no">
-                        Нет
+                        <input class="visually-hidden control-input" type="radio" name="product-group" value="no">
+                        <span class="control-mark-2"></span>
+                        <span class="control-label">Нет</span>
                       </label>
                     </li>
                   </ul>
@@ -295,23 +361,24 @@
                   </div>
 
                   <div class="pagination-container">
-                    <button class="button pagination-back" type="button"><span class="back">назад</span></button>
+                    <button class="button pagination-back pagination-the-end" type="button"><span
+                        class="back">назад</span></button>
                     <ul class="pagination-list">
                       <li class="pagination-item">
-                        <button class="button button-first pagination-current" type="button"><span
-                            class="first">1</span></button>
+                        <button class="button button-numeral pagination-current" type="button"><span
+                            class="numeral">1</span></button>
                       </li>
                       <li class="pagination-item">
-                        <button class="button button-second" type="button"><span class="second">2</span></button>
+                        <button class="button button-numeral" type="button"><span class="numeral">2</span></button>
                       </li>
                       <li class="pagination-item">
-                        <button class="button button-third" type="button"><span class="third">3</span></button>
+                        <button class="button button-numeral" type="button"><span class="numeral">3</span></button>
                       </li>
                       <li class="pagination-item">
-                        <button class="button button-ellipsis" type="button"><span class="ellipsis">...</span></button>
+                        <button class="button button-numeral" type="button"><span class="numeral">...</span></button>
                       </li>
                       <li class="pagination-item">
-                        <button class="button button-last" type="button"><span class="last">15</span></button>
+                        <button class="button button-numeral" type="button"><span class="numeral">15</span></button>
                       </li>
                     </ul>
                     <button class="button pagination-next" type="button"><span class="next">вперёд</span></button>
