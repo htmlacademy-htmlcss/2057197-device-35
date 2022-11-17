@@ -13,7 +13,7 @@
       <nav class="navigation">
 
         <a class="navigation-logo">
-          <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс."></a>
+          <img class="logo" src="images/LOGO_Black.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс."></a>
 
 
         <section class="navigation-form-search">
@@ -35,24 +35,26 @@
           <div class="navigacion-wrapper">
             <div class="navigation-list-left">
               <div class="navigation-item">
-                <a class="navigation-user profile" href="#">Коля Петухов
-                  <button class="navigation-user-exit">Выйти</button>
+                <a class="navigation-user profile" href="#">
+                  <span class="profile-link">Коля Петухов</span>
                 </a>
+                  <button class="navigation-user-exit">Выйти</button>
               </div>
             </div>
             <div class="navigation-list-right">
-              <a class="navigation-user sort" href="#">Сравнить</a>
+              <a class="navigation-user sort" href="#">
+                <span class="sort-link">Сравнить</span></a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-user bascet" href="basket.html"><span class="count">2</span>Корзина</a>
-
+                <a class="navigation-user bascet" href="basket.html"><span class="count">2</span>
+                  <span class="bascet-link">Корзина</span></a>
                 <div class="popover popover-cart">
                   <div class="popover-content">
                     <h2 class="visually-hidden">Корзина</h2>
                     <ul class="cart-items-list">
                       <li class="cart-item">
                         <a href="#" class="popover-cart-link">
-                          <img class="cart-item__img" src="images/catalog (Avateur-selfie-stick).jpg"
+                          <img class="cart-item__img" src="images/catalog(Avateur-selfie-stick).jpg"
                             alt="Фото товара Любительская селфи-палка." width="39" height="43">
                           <p class="cart-item-title">Любительская селфи-палка</p>
                         </a>
@@ -73,7 +75,7 @@
                       </li>
                       <li class="cart-item">
                         <a href="#" class="popover-cart-link">
-                          <img class="cart-item__img" src="images/catalog (professional-selfie-stick).jpg"
+                          <img class="cart-item__img" src="images/catalog(professional-selfie-stick).jpg"
                             alt="Фото товара Профессиональная селфи-палка." width="39" height="43">
                           <p class="cart-item-title">Профессиональная селфи-палка</p>
                         </a>
@@ -95,7 +97,7 @@
                     </ul>
                     <div class="popover-result">
                       <span class="popover-result-item">Товаров: 2</span>
-                      <span class="popover-result-item">Сумма: 2000 &#8381</span>
+                      <span class="popover-result-item">Сумма: 2000 &#8381;</span>
                     </div>
                     <button class="popover-open-button button">
                       <span class="bascet-open">Открыть корзину</span>
@@ -109,10 +111,10 @@
 
 
         <section class="navigation-catalog">
-          <button class="navigation-link" href="catalog.html">Каталог товаров
+          <a class="navigation-link" href="catalog.html">Каталог товаров
             <span class="catalog-circle"></span>
             <span class="catalog-circle-minus"></span>
-          </button>
+          </a>
           <div class="subcatalog">
             <div class="subcatalog-inner">
               <div class="block-list">
@@ -152,16 +154,19 @@
     <main class="main-inner">
       <div class="wrapper">
         <header class="inner-header">
-          <span class="title">Моноподы для селфи</span>
+          <span class="title inner-header__title">Моноподы для селфи</span>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <a class="breadcrumbs-link" href="index.html">
+                <span class="breadcrumbs-link__next">Главная</span></a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+              <a class="breadcrumbs-link" href="catalog.html">
+                <span class="breadcrumbs-link__next">Каталог товаров</span></a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" title="Текущая страница">Моноподы для селфи</a>
+              <a class="breadcrumbs-link" title="Текущая страница">
+                <span class="breadcrumbs-link__next">Моноподы для селфи</span></a>
             </li>
           </ul>
         </header>
@@ -174,7 +179,7 @@
 
           <section class="catalog-products">
             <section class="catalog-filter">
-              <h2 class="catalog-filter-range">Фильтр</h2>
+              <h2 class="catalog-filter-range">Фильтр:</h2>
               <div class="broken-line-filter">
               </div>
               <div class="filter-range">
@@ -196,7 +201,7 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
-                <div class="catalog-filter-1">
+                <div class="catalog-filter-first">
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
@@ -236,24 +241,24 @@
                   </ul>
                 </div>
               </fieldset>
-              <div class="broken-line-filter">
+              <div class="broken-line-filter broken-line-filter__radio">
               </div>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Bluetooth</legend>
-                <div class="catalog-filter-2">
+                <div class="catalog-filter-second">
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="product-group" value="yes"
                           checked>
-                        <span class="control-mark-2"></span>
+                        <span class="control-mark-second"></span>
                         <span class="control-label">Есть</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="product-group" value="no">
-                        <span class="control-mark-2"></span>
+                        <span class="control-mark-second"></span>
                         <span class="control-label">Нет</span>
                       </label>
                     </li>
@@ -261,8 +266,8 @@
                 </div>
               </fieldset>
 
-              <button class="button  button-discover" type="submit">
-                <span class="button-discover__text">Показать</span>
+              <button class="button  button-discover button-discover__filter" type="submit">
+                <span class="button-discover__text button-discover__text__filter">Показать</span>
               </button>
 
             </section>
@@ -294,14 +299,14 @@
                     <li class="product-card">
                       <a class="product-card-link" href="product.html">
                         <div class="product-card-img">
-                          <img class="c" src="images/catalog (Avateur-selfie-stick).jpg" alt="Любительская селфи-палка."
+                          <img class="c" src="images/catalog(Avateur-selfie-stick).jpg" alt="Любительская селфи-палка."
                             width="360" height="380">
                           <div class="product-card-hidden">
                             <span class="button-discover"><span class="button-discover__text">Подробнее</span></span>
                           </div>
                         </div>
                         <div class="product-card-data">
-                          <span class="product-card-title">Любительская селфи-палка</span>
+                          <span class="product-card-title">Любительская<br> селфи-палка</span>
                           <span class="product-card-price">500 ₽</span>
                         </div>
                       </a>
@@ -309,7 +314,7 @@
                     <li class="product-card">
                       <a class="product-card-link" href="product.html">
                         <div class="product-card-img">
-                          <img class="product-card-image" src="images/catalog (professional-selfie-stick).jpg"
+                          <img class="product-card-image" src="images/catalog(professional-selfie-stick).jpg"
                             alt="Профессиональная селфи-палка." width="360" height="380">
                           <div class="product-card-hidden">
                             <span class="button-discover"><span class="button-discover__text">Подробнее</span></span>
@@ -325,7 +330,7 @@
                     <li class="product-card">
                       <a class="product-card-link" href="product.html">
                         <div class="product-card-img">
-                          <img class="product-card-image" src="images/catalog (unsinkable-selfie-stick).jpg"
+                          <img class="product-card-image" src="images/catalog(unsinkable-selfie-stick).jpg"
                             alt="Непотопляемая селфи-палка." width="360" height="380">
                           <div class="product-card-hidden">
                             <span class="button-discover"><span class="button-discover__text">Подробнее</span></span>
@@ -341,7 +346,7 @@
                     <li class="product-card">
                       <a class="product-card-link" href="product.html">
                         <div class="product-card-img">
-                          <img class="product-card-image" src="images/catalog (follow-me-selfie-stick).jpg"
+                          <img class="product-card-image" src="images/catalog(follow-me-selfie-stick).jpg"
                             alt="Селфи-палка «Следуй за мной»." width="360" height="380">
                           <div class="product-card-hidden">
                             <span class="button-discover"><span class="button-discover__text">Подробнее</span></span>
@@ -388,13 +393,12 @@
               </div>
             </div>
         </div>
-      </div>
     </main>
 
 
     <footer class="page-footer">
       <div class="wrapper">
-        <img class="logo" src="images/yellow logo.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс.">
+        <img class="logo" src="images/LOGO_yellow.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс.">
         <div class="page-footer-container">
           <section class="footer-adress">
             <h2 class="visually-hidden">Адрес.</h2>
@@ -427,8 +431,7 @@
                     <svg class="social-icon" width="14" height="12" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#a)">
                         <path fill="currentColor"
-                          d="M12.443.074.623 4.632c-.807.324-.802.774-.148.974l3.035.947 7.021-4.43c.332-.202.635-.093.386.128L5.228 7.385l-.209 3.129c.307 0 .442-.141.614-.307l1.474-1.433 3.066 2.264c.565.312.971.152 1.112-.523l2.013-9.485c.206-.826-.316-1.2-.855-.956Z"
-                          fill="#000" />
+                          d="M12.443.074.623 4.632c-.807.324-.802.774-.148.974l3.035.947 7.021-4.43c.332-.202.635-.093.386.128L5.228 7.385l-.209 3.129c.307 0 .442-.141.614-.307l1.474-1.433 3.066 2.264c.565.312.971.152 1.112-.523l2.013-9.485c.206-.826-.316-1.2-.855-.956Z" />
                       </g>
                       <defs>
                         <clipPath id="a">
@@ -444,8 +447,7 @@
                     <svg class="social-icon" width="16" height="11" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#a)">
                         <path fill="currentColor"
-                          d="M15.667 1.675a1.857 1.857 0 0 0-.51-.847 2.034 2.034 0 0 0-.893-.495c-1.252-.33-6.268-.33-6.268-.33a51.083 51.083 0 0 0-6.26.314 2.107 2.107 0 0 0-.892.506c-.246.238-.425.53-.518.851A19.393 19.393 0 0 0 0 5.337C-.008 6.564.101 7.79.326 8.999c.091.32.27.611.516.846.248.236.556.406.894.496 1.27.329 6.26.329 6.26.329 2.094.024 4.188-.08 6.268-.313.335-.087.642-.257.892-.495.244-.23.42-.524.51-.847.23-1.207.342-2.434.334-3.663a17.72 17.72 0 0 0-.333-3.678ZM6.402 7.619V3.055l4.173 2.282L6.402 7.62Z"
-                          fill="#000" />
+                          d="M15.667 1.675a1.857 1.857 0 0 0-.51-.847 2.034 2.034 0 0 0-.893-.495c-1.252-.33-6.268-.33-6.268-.33a51.083 51.083 0 0 0-6.26.314 2.107 2.107 0 0 0-.892.506c-.246.238-.425.53-.518.851A19.393 19.393 0 0 0 0 5.337C-.008 6.564.101 7.79.326 8.999c.091.32.27.611.516.846.248.236.556.406.894.496 1.27.329 6.26.329 6.26.329 2.094.024 4.188-.08 6.268-.313.335-.087.642-.257.892-.495.244-.23.42-.524.51-.847.23-1.207.342-2.434.334-3.663a17.72 17.72 0 0 0-.333-3.678ZM6.402 7.619V3.055l4.173 2.282L6.402 7.62Z" />
                       </g>
                       <defs>
                         <clipPath id="a">
@@ -462,8 +464,7 @@
                       <g clip-path="url(#a)">
                         <g clip-path="url(#b)">
                           <path fill="currentColor"
-                            d="M10.347.155c1.6-.498 2.773.298 3.413 1.095.533-.2 1.173-.398 1.813-.598 0 .797-.533 1.395-.853 1.594.747.2 1.28-.398 1.28-.398-.107.896-.96 1.693-1.493 1.892-.214 6.274-2.987 10.358-9.494 10.258h-.426c-.32 0-3.947-.398-4.587-1.792 2.133.199 3.627-.399 4.373-1.096-.853-.299-2.56-.398-2.773-2.789.32.2.533.3 1.173.2C1.6 7.723.32 7.026.427 5.034c.32.298.96.498 1.28.398-.64-.2-1.92-3.087-.854-4.581 1.707 1.693 3.52 3.386 6.72 3.486C7.787 2.246 8.64.852 10.347.155Z"
-                            fill="#000" />
+                            d="M10.347.155c1.6-.498 2.773.298 3.413 1.095.533-.2 1.173-.398 1.813-.598 0 .797-.533 1.395-.853 1.594.747.2 1.28-.398 1.28-.398-.107.896-.96 1.693-1.493 1.892-.214 6.274-2.987 10.358-9.494 10.258h-.426c-.32 0-3.947-.398-4.587-1.792 2.133.199 3.627-.399 4.373-1.096-.853-.299-2.56-.398-2.773-2.789.32.2.533.3 1.173.2C1.6 7.723.32 7.026.427 5.034c.32.298.96.498 1.28.398-.64-.2-1.92-3.087-.854-4.581 1.707 1.693 3.52 3.386 6.72 3.486C7.787 2.246 8.64.852 10.347.155Z" />
                         </g>
                       </g>
                       <defs>

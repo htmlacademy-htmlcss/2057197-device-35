@@ -1,4 +1,7 @@
 {
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "editor.renderWhitespace": "selection",
   "files.exclude": {
       "*:Zone.Identifier": true,
